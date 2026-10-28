@@ -1,0 +1,4 @@
+# Real student names, rates and calendars stay local
+private-config.js
+# Legacy React version (contains the original roster); superseded by index.html
+timesheet-generator.jsx
