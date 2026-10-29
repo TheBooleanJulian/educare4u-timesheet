@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
 <style>
-/* Sam Unified UI tokens — copied from tbj-brand dist/tokens.css 1.0.0. Re-copy, don't hand-edit. */
+/* Julian Unified UI tokens — copied from tbj-brand dist/tokens.css 1.0.0. Re-copy, don't hand-edit. */
 :root {
   color-scheme: dark light;
   --font-display: "Chakra Petch", "Rajdhani", system-ui, sans-serif;
@@ -66,7 +66,7 @@
   --elevation: 0 12px 32px rgba(0, 0, 0, 0.55);
 }
 
-/* Components — subset of the Sam Unified UI component stylesheet */
+/* Components — subset of the Julian Unified UI component stylesheet */
 *, *::before, *::after { box-sizing: border-box; }
 html, body { height: 100%; }
 body { margin: 0; background: var(--bg); color: var(--ink); font: 400 14px/20px var(--font-sans); -webkit-font-smoothing: antialiased; }
@@ -309,16 +309,16 @@ globalThis.TimesheetCore = (() => {
   ].join('\n');
 
   const DEFAULT_SETTINGS = {
-    tutor: 'Sam',
+    tutor: 'Miku',
     defaultRate: 35,
     rates: [
-      { name: 'Farah', rate: 40 }, { name: 'Gavin', rate: 40 }, { name: 'Hana', rate: 35 },
-      { name: 'Ivan', rate: 35 }, { name: 'Jade', rate: 35 }, { name: 'Mei Mei', rate: 35 },
-      { name: 'Leo', rate: 35 }, { name: 'Noah', rate: 35 },
+      { name: 'Rin', rate: 40 }, { name: 'Len', rate: 40 }, { name: 'Kaito', rate: 35 },
+      { name: 'Meiko', rate: 35 }, { name: 'Gumi', rate: 35 }, { name: 'Megurine Luka', rate: 35 },
+      { name: 'Gakupo', rate: 35 }, { name: 'IA', rate: 35 },
     ],
     rules: [
-      { id: 1, label: 'Noah 30-min break', type: 'break_over', student: 'Noah', minHours: 3, breakMins: 30 },
-      { id: 2, label: 'Farah long session split', type: 'exact_hours', student: 'Farah', minHours: 6, billHours: 2, breakHours: 1 },
+      { id: 1, label: 'IA 30-min break', type: 'break_over', student: 'IA', minHours: 3, breakMins: 30 },
+      { id: 2, label: 'Rin long session split', type: 'exact_hours', student: 'Rin', minHours: 6, billHours: 2, breakHours: 1 },
       { id: 3, label: 'Lunch 10am–3pm', type: 'window', student: '', start: '10:00', end: '15:00', breakMins: 60 },
       { id: 4, label: 'Lunch 10am–4pm', type: 'window', student: '', start: '10:00', end: '16:00', breakMins: 120 },
     ],
@@ -1279,46 +1279,46 @@ globalThis.TemplateXlsx = (() => {
   const SAMPLE = `5
 Aug 2026, Wed
 12:00 – 13:30
-Educare4u Jade Sec 1 Maths + Sci
+Educare4u Gumi Sec 1 Maths + Sci
 https://us06web.zoom.us/j/00000000000
 12:00 – 13:30
-Educare4u Jade Sec 1 Maths + Sci
+Educare4u Gumi Sec 1 Maths + Sci
 Zoom
 
 7
 Aug 2026, Fri
 18:00 – 20:30
-Educare4u Mei Mei Sec 4 Maths + Sci
+Educare4u Megurine Luka Sec 4 Maths + Sci
 Centre Branch, 1 Sample Rd, Singapore 000000
 
 9
 Aug 2026, Sun
 12:00 – 15:00
-Educare4u Noah Sec 4 Maths + Sci
+Educare4u IA Sec 4 Maths + Sci
 Centre Branch, 1 Sample Rd, Singapore 000000
 
 11
 Aug 2026, Tue
 12:00 – 13:30
-Educare4u Jade Sec 1 Maths + Sci
+Educare4u Gumi Sec 1 Maths + Sci
 https://us06web.zoom.us/j/00000000000
 12:00 – 13:30
-Educare4u Jade Sec 1 Maths + Sci
+Educare4u Gumi Sec 1 Maths + Sci
 Zoom
 
 12
 Aug 2026, Wed
 19:30 – 21:30
-Educare4u Ivan Sec 2 Sci
+Educare4u Meiko Sec 2 Sci
 Zoom
 19:30 – 21:30
-Educare4u Ivan Sec 4 Sci
+Educare4u Meiko Sec 4 Sci
 https://us06web.zoom.us/j/00000000000
 
 14
 Aug 2026, Fri
 16:00 – 17:30
-Educare4u Mei Mei Sec 4 Maths + Sci
+Educare4u Megurine Luka Sec 4 Maths + Sci
 Centre Branch, 1 Sample Rd, Singapore 000000
 18:02 – 18:42
 Take transit from EduCare4u Pte. Ltd. to Promenade Station Exit A
@@ -1326,31 +1326,31 @@ Take transit from EduCare4u Pte. Ltd. to Promenade Station Exit A
 21
 Aug 2026, Fri
 18:00 – 20:00
-Educare4u Mei Mei Sec 4 Maths + Sci
+Educare4u Megurine Luka Sec 4 Maths + Sci
 Centre Branch, 1 Sample Rd, Singapore 000000
 
 25
 Aug 2026, Tue
 12:00 – 13:30
-Educare4u Jade Sec 1 Maths + Sci
+Educare4u Gumi Sec 1 Maths + Sci
 https://us06web.zoom.us/j/00000000000
 12:00 – 13:30
-Educare4u Jade Sec 1 Maths + Sci
+Educare4u Gumi Sec 1 Maths + Sci
 Zoom
 19:30 – 21:30
-Educare4u Ivan Sec 2 Sci
+Educare4u Meiko Sec 2 Sci
 https://us06web.zoom.us/j/00000000000
 19:30 – 21:30
-Educare4u Ivan Sec 2 Sci
+Educare4u Meiko Sec 2 Sci
 Zoom
 
 28
 Aug 2026, Fri
 14:00 – 16:00
-Educare4u Noah Sec 4 Maths + Sci
+Educare4u IA Sec 4 Maths + Sci
 Centre Branch, 1 Sample Rd, Singapore 000000
 18:00 – 20:00
-Educare4u Mei Mei Sec 4 Maths + Sci
+Educare4u Megurine Luka Sec 4 Maths + Sci
 Centre Branch, 1 Sample Rd, Singapore 000000`;
 
   // ── State ─────────────────────────────────────────────────────────────────
@@ -1584,7 +1584,7 @@ Centre Branch, 1 Sample Rd, Singapore 000000`;
     $('settings-body').innerHTML = `
       <div class="set-sec" style="border-top:0;padding-top:0">
         <label class="field"><span>Your name</span><input class="input" value="${esc(S.tutor)}" data-s="tutor"></label>
-        <p class="field__help">Fills "Name" in the sheet and is ignored in titles like "Jade x Sam".</p>
+        <p class="field__help">Fills "Name" in the sheet and is ignored in titles like "Gumi x Miku".</p>
         <label class="toggle"><input type="checkbox" role="switch" data-s="markPH" ${S.markPH ? 'checked' : ''}> Mark public holidays as "9 PH"</label>
       </div>
       <div class="set-sec">

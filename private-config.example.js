@@ -1,7 +1,7 @@
 // Copy to private-config.js (gitignored) and edit. Omit any key to keep the built-in demo default.
 globalThis.TIMESHEET_PRIVATE = {
   settings: {
-    tutor: 'Your Name',          // fills "Name" in the sheet; ignored in titles like "Jade x Your Name"
+    tutor: 'Your Name',          // fills "Name" in the sheet; ignored in titles like "Gumi x Your Name"
     defaultRate: 35,
     rates: [{ name: 'Student One', rate: 40 }, { name: 'Student Two', rate: 35 }],
     rules: [
